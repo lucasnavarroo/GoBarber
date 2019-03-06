@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "nodemon src/index.js -e js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lucas Navarro",
@@ -12,11 +12,13 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "multer": "^1.4.1",
     "nodemon": "^1.18.10",
     "nunjucks": "^3.1.7",
     "pg": "^7.8.1",
-    "sequelize": "^4.42.0"
+    "sequelize": "^4.42.0",
+    "session-file-store": "^1.2.0"
   },
   "devDependencies": {
     "sequelize-cli": "^5.4.0"
